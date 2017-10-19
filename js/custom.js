@@ -38,7 +38,7 @@ $(function () {
       .focusout(function() {
 
           var params = {
-          authtoken: 'ghmark7920',
+          authtoken: '',
           first_name : $first_name.val(),
           last_name : $last_name.val(),
           birth_date : $birth_date.val(),
