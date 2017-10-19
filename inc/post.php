@@ -15,7 +15,7 @@ $birth_date = $_POST['birth_date'];
 $insurance_carrier = $_POST['insurance_carrier'];
 $insurance_id = $_POST['insurance_id'];
 
-$url = "https://apistage.gohealthuc.com:1981/v1/eligibility_demo/?authtoken=ghmark7920";
+$url = "https://apistage.gohealthuc.com:1981/v1/eligibility_demo/?authtoken=$authtoken";
 $ch = curl_init($url);
 curl_setopt($ch, CURLOPT_HTTPAUTH, CURLAUTH_ANY);
 curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
