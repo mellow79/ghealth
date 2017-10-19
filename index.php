@@ -34,6 +34,7 @@
     <div class="row">
 
         <div class="col-md-6">
+
             <form id="reg" name="reg" action="" method="post" class="form-horizontal" role="form">
                 <fieldset>
                 <div class="form-group">
@@ -50,7 +51,7 @@
                 <div class="form-group">
                     <label for="dob">DOB:</label>
                     <div class="input-group date">
-                        <input id="datepicker" name="dob" required type="text" class="form-control" value="1990-12-02">
+                        <input id="datepicker" name="dob" required type="text" class="form-control" value="1991-10-31">
                         <div class="input-group-addon">
                             <span class="glyphicon glyphicon-calendar"></span>
                         </div>
@@ -69,6 +70,7 @@
                 <div class="ins" style="display:none">
                     <fieldset>
                         <legend>Provider Information</legend>
+                        <div id="alert_msg"></div>
                     <!--<div class="form-group">
                         <label for="pfirst_name">Providers Firstname:</label>
                         <input type="text" class="form-control" id="pfirst_name" required placeholder="Provider First name">
