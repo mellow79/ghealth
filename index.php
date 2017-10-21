@@ -35,23 +35,23 @@
 
         <div class="col-md-6">
 
-            <form id="reg" name="reg" action="" method="post" class="form-horizontal" role="form">
+            <form id="reg" name="reg" action="" class="form-horizontal" method="post" role="form">
                 <fieldset>
                 <div class="form-group">
                     <legend>Patient Information</legend>
                 </div>
                 <div class="form-group">
                     <label for="first_name">Firstname:</label>
-                    <input type="text" class="form-control" id="first_name" required placeholder="Enter First name">
+                    <input type="text" class="form-control" name="first_name" id="first_name" required placeholder="Enter First name">
                 </div>
                     <div class="form-group">
                     <label for="last_name">Lastname:</label>
-                    <input type="text" class="form-control" id="last_name" required placeholder="Enter Last name">
+                    <input type="text" class="form-control"  name="last_name" id="last_name" required placeholder="Enter Last name">
                 </div>
                 <div class="form-group">
                     <label for="dob">DOB:</label>
                     <div class="input-group date">
-                        <input id="datepicker" name="dob" required type="text" class="form-control" value="1991-10-31">
+                        <input id="datepick" name="dob" required type="text" class="form-control" value="1991-10-31">
                         <div class="input-group-addon">
                             <span class="glyphicon glyphicon-calendar"></span>
                         </div>
@@ -81,10 +81,10 @@
                     </div> -->
                     <div class="form-group">
                         <label for="insCarrier">Insurance Carrier:</label>
-                        <select class="form-control" id="insCarrier">
-                            <option value="">Select a carrier</option>
+                        <select name="insCarrier" class="form-control" id="insCarrier">
+                            <option value="" selected>Select a carrier</option>
                             <option value="aetna">Aetna</option>
-                            <option value="united_health_care" selected>United Health Care</option>
+                            <option value="united_health_care">United Health Care</option>
                             <option value="blue_cross_blue_shield">Blue Cross/Blue Shield</option>
                             <option value="cigna">cigna</option>
                             <option value="no_insurance">No Insurance</option>
@@ -92,14 +92,13 @@
                     </div>
                     <div class="form-group">
                         <label for="insID"> Insurance ID:</label>
-                        <input type="text" class="form-control" id="insID" placeholder="Enter Insurance ID">
+                        <input type="text" class="form-control" name="insID" id="insID" placeholder="Enter Insurance ID">
                     </div>
                     </fieldset>
                 </div>
                 <div class="form-group">
                     <div class="col-sm-10 col-sm-offset-2">
-                        <button type="submit" class="btn btn-primary">Submit
-                        </button>
+                        <input type="submit" id="submitButton" class="btn btn-primary" name="submitButton" value="Submit">
                     </div>
                 </div>
             </form>
